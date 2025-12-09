@@ -3,7 +3,7 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-  --font-system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Verdana, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-serif: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --default-font-family: var(--font-serif);
 }
@@ -100,6 +100,9 @@
 }
 
 @layer base {
+  html, body {
+    @apply bg-zinc-100 text-zinc-900;
+  }
   h1, h2 {
     @apply font-semibold;
   }
@@ -114,6 +117,25 @@
     :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
       margin-top: 1em;
       margin-bottom: 1em;
+    }
+  }
+  .prose {
+    --tw-prose-links: var(--color-sky-700);
+
+    :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+      text-decoration: none;
+    }
+    :where(a:hover):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+      text-decoration: underline;
+    }
+
+    a:visited:not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+      color: var(--color-indigo-700);
+    }
+
+    a:active:not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+      font-weight: 600;
+      text-decoration: none;
     }
   }
 }
@@ -187,5 +209,13 @@
     &:hover {
       @apply underline;
     }
+  }
+
+  .page-link {
+    @apply block lg:inline-block leading-normal px-5 py-2 lg:p-0 lg:mr-5 border-b lg:border-none text-xl font-medium;
+  }
+
+  .site-width {
+    @apply max-w-7xl mx-auto px-8;
   }
 }

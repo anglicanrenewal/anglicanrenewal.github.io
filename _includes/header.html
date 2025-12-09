@@ -1,9 +1,11 @@
-<header class="site-header border-t-[5px] border-b min-h-[56px] relative" role="banner">
-
-  <div class="wrapper max-w-3xl mx-auto px-8 flex items-center justify-between">
+<header class="site-header border-t-[5px] border-b border-t-[#EC762C] border-b-[#6E4EA7] bg-zinc-200 min-h-[56px]" role="banner">
+  <div class="site-width flex items-center justify-between relative">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title text-2xl font-light tracking-tight mb-0" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title mb-0 py-2 flex items-center space-x-2" rel="author" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/atra_logo.svg" | relative_url }}" class="w-10 h-10">
+      <span class="text-3xl font-light tracking-tight">{{ site.title | escape }}</span>
+    </a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -16,11 +18,11 @@
           </span>
         </label>
 
-        <div class="trigger hidden lg:block absolute lg:relative top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md lg:shadow-none peer-checked:block">
+        <div class="trigger hidden lg:block absolute lg:relative top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md lg:shadow-none peer-checked:block border-t border-gray-300 lg:border-t-0">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-            <a class="page-link block lg:inline-block leading-normal px-5 py-2 lg:p-0 lg:mr-5 border-b lg:border-none" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
         </div>

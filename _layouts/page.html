@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<article class="post prose-lg">
+<div class="site-width">
+  <article class="post prose prose-lg">
+    <header class="post-header mb-8">
+      <h1 class="post-title tracking-tight">{{ page.title | escape }}</h1>
+    </header>
 
-  <header class="post-header mb-8">
-    <h1 class="post-title tracking-tight">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content mb-8">
-    {{ content }}
-  </div>
-
-</article>
+    <div class="post-content mb-8">
+      {{ content }}
+    </div>
+  </article>
+</div>
