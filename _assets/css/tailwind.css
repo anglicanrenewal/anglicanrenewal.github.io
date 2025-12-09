@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@plugin '@tailwindcss/typography';
+
+@layer components {
+  .highlight {
+    @apply bg-[#282a36] text-[#f8f8f2] p-3 rounded-md text-sm;
+
+    .h, .k, .kc, .kd, .kn, .kp, .kr, .kt, .nt {
+      @apply text-[#ff79c6];
+    }
+
+    .c, .c1, .cm {
+      @apply text-[#6272a4] italic;
+    }
+
+    .s, .s1, .s2, .sh, .sx, .sd, .dl {
+      @apply text-[#f1fa8c];
+    }
+
+    .sr {
+      @apply text-[#50fa7b];
+    }
+
+    .nf, .nb {
+      @apply text-[#50fa7b];
+    }
+
+    .o, .ow {
+      @apply text-[#ff79c6];
+    }
+
+    .mi, .il {
+      @apply text-[#bd93f9];
+    }
+
+    .nc, .nd, .no {
+      @apply text-[#8be9fd];
+    }
+
+    .nn {
+      @apply text-[#8be9fd];
+    }
+
+    .p, .pi {
+      @apply text-[#f8f8f2];
+    }
+  }
+
+  .social-list-item {
+    @apply block;
+
+    & + & {
+      @apply pt-1;
+    }
+  }
+
+  .social-link {
+    @apply no-underline flex items-center space-x-1;
+    &:hover {
+      color: var(--tw-minima-text);
+    }
+  }
+
+  .social-icon {
+    @apply w-4 h-4 align-text-top;
+    fill: var(--tw-minima-gray);
+  }
+
+  .social-username {
+    &:hover {
+      @apply underline;
+    }
+  }
+}
