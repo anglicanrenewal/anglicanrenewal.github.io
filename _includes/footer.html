@@ -1,11 +1,11 @@
-<footer class="site-footer h-card border-t border-minima-light py-8">
+<footer class="site-footer h-card border-t py-8">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper max-w-3xl mx-auto px-8">
 
     <h2 class="footer-heading text-lg mb-4">{{ site.title | escape }}</h2>
 
-    <div class="footer-cols grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm text-minima-gray">
+    <div class="footer-cols grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
       <div class="footer-col">
         <ul class="contact-list">
           <li class="p-name">
@@ -16,7 +16,7 @@
             {%- endif -%}
             </li>
             {%- if site.email -%}
-            <li><a class="u-email text-minima-brand hover:text-minima-text hover:underline" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><a class="u-email hover:underline" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
       </div>

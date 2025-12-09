@@ -1,21 +1,22 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post h-entry prose-lg" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header mb-8">
-    <h1 class="post-title p-name text-4xl tracking-tight leading-none lg:text-3xl" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta text-sm text-minima-gray">
+  <header class="post-header mb-5">
+    <h1 class="post-title p-name tracking-tight !m-0" itemprop="name headline">{{ page.title | escape }}</h1>
+    <div class="post-meta text-sm">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+    </div>
   </header>
 
-  <div class="post-content e-content mb-8 prose" itemprop="articleBody">
+  <div class="post-content e-content mb-8" itemprop="articleBody">
     {{ content }}
   </div>
 
