@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Anglicans for Truth, Renewal, and Accountability"
-email: your-email@example.com
+title: ATRA
+# email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Anglicans for Truth, Renewal and Accountability (ATRA) is an informal, grassroots group of
+  clergy and laity in the Anglican Church of North America (ACNA) actively working together
+  on concrete steps toward accountability, renewal, and a healthier culture within the ACNA.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:year/:month/:title
