@@ -28,7 +28,7 @@ github_username:  jekyll
 header_pages:
   - about.md
   - resources.md
-  - contact.md
+  - connect.md
 
 # Build settings
 markdown: kramdown
