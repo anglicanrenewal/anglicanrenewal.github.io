@@ -4,7 +4,7 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title mb-0 py-2 flex items-center space-x-2" rel="author" href="{{ "/" | relative_url }}">
       <img src="{{ "/assets/atra_logo.svg" | relative_url }}" class="w-10 h-10">
-      <span class="text-3xl font-light tracking-tight">{{ site.title | escape }}</span>
+      <span class="text-3xl font-logo font-extrabold italic tracking-tight">{{ site.title | escape }}</span>
     </a>
 
     {%- if page_paths -%}
