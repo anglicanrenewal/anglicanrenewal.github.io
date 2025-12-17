@@ -5,7 +5,7 @@
 @theme {
   --font-logo: 'Playfair Display', Georgia, serif;
   --font-system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Verdana, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-serif: 'Cormorant Garamond', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, Cambria, Cochin, Times, 'Times New Roman', serif;
   --default-font-family: var(--font-serif);
 }
 
