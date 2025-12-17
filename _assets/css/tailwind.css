@@ -275,13 +275,17 @@
   .social-link {
     @apply no-underline flex items-center space-x-1;
     &:hover {
-      color: black;
+      color: #AAF;
+
+      .social-icon {
+        fill: #AAF;
+      }
     }
   }
 
   .social-icon {
     @apply w-4 h-4 align-text-top;
-    fill: #888;
+    fill: var(--color-zinc-100);
   }
 
   .social-username {

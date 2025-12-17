@@ -2,34 +2,27 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="site-width">
-
-    <h2 class="footer-heading text-lg mb-4">{{ site.title | escape }}</h2>
+    <div class="footer-heading text-lg font-logo font-extrabold italic">{{ site.title | escape }}</div>
 
     <div class="footer-cols grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
       <div class="footer-col">
+        {%- include social.html -%}
         <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
+          <li class="p-name">© Anglicans for Truth, Renewal, and Accountability</li>
             {%- if site.email -%}
             <li><a class="u-email hover:underline" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
       </div>
-
+      {% comment %}
       <div class="footer-col">
         {%- include social.html -%}
       </div>
-
       <div class="footer-col">
         <p>{{- site.description | escape -}}</p>
       </div>
+      {% endcomment %}
     </div>
 
   </div>
-
 </footer>
