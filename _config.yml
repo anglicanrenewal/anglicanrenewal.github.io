@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   clergy and laity in the Anglican Church of North America (ACNA) actively working together
   on concrete steps toward accountability, renewal, and a healthier culture within the ACNA.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://anglicanrenewal.org" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:year/:month/:title
 facebook_username: anglicanrenewal
 
