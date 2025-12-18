@@ -3,8 +3,8 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title mb-0 py-2 flex items-center space-x-2" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{ "/assets/atra_logo.svg" | relative_url }}" class="w-10 h-10">
-      <span class="text-3xl font-logo font-extrabold italic tracking-tight bg-gradient-to-r from-[#EC762C] to-[#7A4C8D] text-transparent bg-clip-text">{{ site.title | escape }}</span>
+      {% comment %}<img src="{{ "/assets/atra_logo.svg" | relative_url }}" class="w-10 h-10">{% endcomment %}
+      <span class="text-3xl font-logo font-extrabold italic tracking-tight text-[#5E4B80]">{{ site.title | escape }}</span>
     </a>
 
     {%- if page_paths -%}
