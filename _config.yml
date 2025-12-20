@@ -41,7 +41,10 @@ tailwind:
   input: _assets/css/tailwind.css
   output: _site/assets/css/main.css
 
-
+collections:
+  requests:
+    output: false
+    permalink: /:collection/:path
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
