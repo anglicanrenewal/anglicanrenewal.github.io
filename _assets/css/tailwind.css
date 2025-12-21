@@ -264,38 +264,28 @@
     }
   }
 
-  .social-list-item {
-    @apply block;
+  .social-media-list {
+    @apply list-none ml-0;
 
-    & + & {
-      @apply pt-1;
-    }
-  }
+    li {
+      @apply inline-block;
 
-  .social-link {
-    @apply no-underline flex items-center space-x-1;
-    &:hover {
-      color: #AAF;
+      & + & {
+        @apply pl-2;
+      }
 
-      .social-icon {
-        fill: #AAF;
+      .fa-brands {
+        display: inline !important;
       }
     }
-  }
 
-  .social-icon {
-    @apply w-4 h-4 align-text-top;
-    fill: var(--color-zinc-100);
-  }
+    a {
+      @apply no-underline text-lg;
 
-  .social-username {
-    &:hover {
-      @apply underline;
+      &:hover {
+        color: #AAF;
+      }
     }
-  }
-
-  .page-link {
-    @apply block md:inline-block leading-normal px-5 py-2 md:p-0 md:mr-5 border-b md:border-none text-xl font-medium;
   }
 
   .site-width {

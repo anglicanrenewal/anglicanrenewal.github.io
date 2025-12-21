@@ -46,6 +46,15 @@ collections:
     output: false
     permalink: /:collection/:path
 
+
+hide_site_feed_link: true
+social_links:
+  - title: Find us on Facebook
+    icon: facebook-square
+    url: "https://facebook.com/anglicanrenewal"
+  - title: Follow us on X (née Twitter)
+    icon: square-x-twitter
+    url: "https://x.com/anglicanrenewal"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
