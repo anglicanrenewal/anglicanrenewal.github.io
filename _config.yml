@@ -45,6 +45,8 @@ collections:
   requests:
     output: false
     permalink: /:collection/:path
+  ext_articles:
+    output: false
 
 
 hide_site_feed_link: true
