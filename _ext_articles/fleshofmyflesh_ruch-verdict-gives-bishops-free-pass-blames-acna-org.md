@@ -1,6 +1,6 @@
 ---
 title: Ruch Verdict Gives Bishops Free Pass, Blames ACNA Org
-url: "https://www.patheos.com/blogs/fleshofmyflesh/2025/12/ruch-verdict-gives-bishops-free-pass-blames-acna-org/"
+ext_url: "https://www.patheos.com/blogs/fleshofmyflesh/2025/12/ruch-verdict-gives-bishops-free-pass-blames-acna-org/"
 wayback_url: "https://web.archive.org/web/20251230223825/https://www.patheos.com/blogs/fleshofmyflesh/2025/12/ruch-verdict-gives-bishops-free-pass-blames-acna-org/"
 ---
 The article critically examines the Anglican Church in North America's (ACNA) 71-page

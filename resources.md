@@ -7,7 +7,7 @@ title: Resources
 
 <dl>
 {% for article in site.ext_articles %}
-  <dt><a href="{{ article.url }}">{{ article.title }}</a></dt>
+  <dt><a href="{{ article.ext_url }}">{{ article.title }}</a></dt>
   <dd>{{ article.content | markdownify }}</dd>
 {% endfor %}
 </dl>

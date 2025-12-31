@@ -1,6 +1,6 @@
 ---
 title: When the Blindfold Becomes a Vestment
-url: "https://open.substack.com/pub/voicefromflorence/p/when-the-blindfold-becomes-a-vestment"
+ext_url: "https://open.substack.com/pub/voicefromflorence/p/when-the-blindfold-becomes-a-vestment"
 wayback_url: 
 substack_url: "https://substack.com/inbox/post/178895633"
 ---

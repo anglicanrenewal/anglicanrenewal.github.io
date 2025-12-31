@@ -1,6 +1,6 @@
 ---
 title: Are Abuse Survivors Best Served When Institutions Investigate Themselves?
-url: "https://www.netgrace.org/resources/are-survivors-served-without-independent-investigations"
+ext_url: "https://www.netgrace.org/resources/are-survivors-served-without-independent-investigations"
 wayback_url: "https://web.archive.org/web/20251026022406/https://www.netgrace.org/resources/are-survivors-served-without-independent-investigations"
 ---
 This article helps people understand the critical differences between a truly independent

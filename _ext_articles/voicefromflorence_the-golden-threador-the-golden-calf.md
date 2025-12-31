@@ -1,6 +1,6 @@
 ---
 title: The Golden Thread — or the Golden Calf?
-url: "https://open.substack.com/pub/voicefromflorence/p/the-golden-threador-the-golden-calf"
+ext_url: "https://open.substack.com/pub/voicefromflorence/p/the-golden-threador-the-golden-calf"
 wayback_url: 
 substack_url: "https://substack.com/inbox/post/178727471"
 ---
