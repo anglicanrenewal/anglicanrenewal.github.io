@@ -26,7 +26,8 @@ facebook_username: anglicanrenewal
 
 header_pages:
   # - about.md
-  - resources.md
+  #- resources.md
+  - helpful_articles.md
   - connect.md
 
 # Build settings
