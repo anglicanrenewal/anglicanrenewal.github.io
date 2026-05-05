@@ -3,7 +3,11 @@ layout: default
 ---
 <div class="home site-width">
   <div class="prose prose-xl mx-auto">
-    {%- if page.title -%}<h1 class="page-heading text-3xl">{{ page.title }}</h1>{%- endif -%}
+    <h1 class="page-heading text-3xl sr-only">{{ page.title }}</h1>
+    <div class="mb-0 min-h-0 max-h-64 py-2 flex items-center space-x-6" aria-hidden="true">
+      <img src="{{ "/assets/images/atra_logo.png" | relative_url }}" class="max-h-64 w-auto object-contain">
+      <img src="{{ "/assets/images/atra_logo-name.svg" | relative_url }}" class="max-h-32 w-auto object-contain">
+    </div>
     {{ content }}
 
     <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-between">
