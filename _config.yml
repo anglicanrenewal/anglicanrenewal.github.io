@@ -58,6 +58,12 @@ social_links:
   - title: Follow us on X (née Twitter)
     icon: square-x-twitter
     url: "https://x.com/anglicanrenewal"
+  - title: Read us on Substack
+    icon: substack
+    url: "https://anglicanrenewal.substack.com/archive"
+  - title: Subscribe to our Substack feed
+    icon: rss
+    url: "https://anglicanrenewal.substack.com/feed"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

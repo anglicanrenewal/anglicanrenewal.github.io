@@ -18,7 +18,23 @@
 {%- for entry in site.social_links -%}
   <li>
     <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
-      <span class="fa-brands fa-{{ entry.icon }} fa-lg"></span>
+      {%- if entry.icon == 'substack' -%}
+        {%- comment -%} Substack has no Font Awesome glyph; inline mark from Simple Icons (CC0). {%- endcomment -%}
+        <svg class="inline h-[1.05em] w-[1.125em] align-[-0.16em] fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+        </svg>
+      {%- elsif entry.icon == 'rss' -%}
+        {%- comment -%} fa-rss lives in the solid set; we only self-host the brands webfont, so inline it. {%- endcomment -%}
+        <svg class="inline h-[1em] w-[1em] align-[-0.125em] fill-current" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194
+            11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0
+            13.806c0-1.21.983-2.195 2.194-2.195zM10.606
+            16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"
+          />
+        </svg>
+      {%- else -%}
+        <span class="fa-brands fa-{{ entry.icon }} fa-lg"></span>
+      {%- endif -%}
     </a>
   </li>
 {%- endfor -%}
