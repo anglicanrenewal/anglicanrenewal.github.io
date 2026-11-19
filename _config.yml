@@ -25,9 +25,8 @@ permalink: /:categories/:year/:month/:title
 facebook_username: anglicanrenewal
 
 header_pages:
-  # - about.md
+  - about.md
   #- resources.md
-  - helpful_articles.md
   - connect.md
 
 # Build settings
