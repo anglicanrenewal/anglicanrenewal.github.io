@@ -36,6 +36,9 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
+          # Overrides .ruby-version (3.4.2 locally). Newer runner images only
+          # ship the latest patch of each series, so track the 3.4 series.
+          ruby-version: '3.4'
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
